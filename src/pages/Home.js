@@ -73,8 +73,8 @@ function Home() {
       </Grid>
       <div className="footer">
        
-        <p>Pagination Not Impleted</p>
-        <p>About Us Not Impleted</p>
+        <p>Pagination Not Implemeted</p>
+        <p>About Us Not Implemeted</p>
       </div>
     </div>
     
