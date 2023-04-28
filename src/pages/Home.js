@@ -24,7 +24,7 @@ function Home() {
 
   useEffect(() => {
     fetchData(currentPage);
-  }, [search, currentPage])
+  },[search, currentPage])
 
   const inputHandler = (e) => {
     setInput(e.target.value);
@@ -89,8 +89,18 @@ function Home() {
       <div className="pagination">
   <Button disabled={currentPage === 1} onClick={prevPageHandler}>Prev</Button>
   {Array.from(Array(totalPages).keys()).map((page) => {
-    // show only 5 pages before and after the current page
-    if (page + 1 >= currentPage - 5 && page + 1 <= currentPage + 5) {
+    // me bo highlight currentpage
+    // if (page >= currentPage - 1 && page + 1 <= currentPage + 3) {
+    //   return (
+    //     <Button 
+    //       key={page +1} 
+    //       onClick={() => setPageHandler(page )} 
+    //       style={page === currentPage -1 ? { backgroundColor: '33333', boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.3)' } : null}>
+    //       {page + 1}
+    //     </Button>
+    //   )
+    // }
+    if (page >= currentPage - 1 && page + 1 <= currentPage + 3) {
       return (
         <Button key={page} onClick={() => setPageHandler(page + 1)}>{page + 1}</Button>
       )
@@ -99,10 +109,12 @@ function Home() {
   })}
   <Button disabled={currentPage === totalPages} onClick={nextPageHandler}>Next</Button>
   
+  
+
 </div>
-<Button className='returnhome'  textAlign="center" onClick={() => reloadPage()}>Home</Button>
-      <div className="footer">
-        <p>About Us Not Implemeted</p>
+<Button disabled={currentPage === 1} style={{ display: currentPage === 1 ? "none" : "" }}className="returnhome"onClick={() => reloadPage()}>Reload</Button>   
+     <div className="footer">
+        <p>About Us Not Implemented</p>
       </div>
     </div>
   )

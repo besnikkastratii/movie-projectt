@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import noImage from '../images/noImage.png';
-import { motion } from 'framer-motion';
 
 function Details({match}) {
     const [details, setdetails] = useState(null)
