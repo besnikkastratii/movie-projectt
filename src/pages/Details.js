@@ -18,17 +18,12 @@ function Details({match}) {
     return (
         <div className="main-container">
         <div className="header">
-          <h4>Moviefie</h4>
+          <h4>Movie Details :</h4>
         </div>
         <div className="details-container">
           <div className="flexBox">
-
             <div className="info">
-              <div className="back-button">
-                <Link to='/'>
-                  <button>Back to search</button>
-                </Link>
-              </div>
+              
               <div className="big-title">
                 <p> {details && details.data.Title} </p>
               </div>
@@ -67,6 +62,11 @@ function Details({match}) {
             <p>{details && details.data.Plot}</p>
           </div> 
         </div>
+        <div className="back-button">
+                <Link to='/'>
+                  <button>Back to search</button>
+                </Link>
+              </div>
         <div className="footer">
           copyright &copy; Besnik Kastrati
         </div>

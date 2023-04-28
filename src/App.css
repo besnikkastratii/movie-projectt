@@ -58,10 +58,17 @@ button:focus {
   color: #3a3a3a;
 }
 .search form button:hover {
-  transition: 0.5s ease all;
+  transition: 1s ease all;
   background-color: #4ece34;
 }
+
+.returnhome{
+  float: right;
+}
+
+
 .search form button {
+  transition: 1s ease all;
   width: 60px;
   height: 35px;
   background: #ff5353;
@@ -138,7 +145,7 @@ button:focus {
   border: none;
   color: #ffffff;
   font-size: 14px;
-  float: right;
+  margin-left:400px;
   cursor: pointer;
 }
 .back-button button:hover {

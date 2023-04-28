@@ -48,6 +48,11 @@ function Home() {
     setCurrentPage(page);
   }
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
+
   return (
     <div className="main-container">
       <div className="header">
@@ -93,8 +98,9 @@ function Home() {
     return null;
   })}
   <Button disabled={currentPage === totalPages} onClick={nextPageHandler}>Next</Button>
+  
 </div>
-
+<Button className='returnhome'  textAlign="center" onClick={() => reloadPage()}>Home</Button>
       <div className="footer">
         <p>About Us Not Implemeted</p>
       </div>
