@@ -10,7 +10,7 @@ function Home() {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [input, setInput] = useState("");
-  const [search, setSearch] = useState("kosovo")
+  const [search, setSearch] = useState("action")
 
   const fetchData = async (page) => {
     try {
