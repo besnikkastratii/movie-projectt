@@ -126,6 +126,13 @@ button:focus {
   color: rgb(32, 32, 32);
   font-weight: 350;
 }
+
+.kerko-teksti:hover {
+  text-transform:lowercase ;
+  color: #000000;
+}
+
+
 .title a:hover {
   color: rgb(0, 253, 42);
   font-size: 1.02rem;
@@ -157,6 +164,18 @@ button:focus {
 .MuiButtonBase-root:nth-child(2){
   background-color: rgb(224, 224, 224) !important;
   box-shadow: 0 0 10px 0 rgba(87, 87, 87, 0.5)!important;
+}
+.MuiButtonBase-root:nth-child(3){
+  background-color: rgba(0, 0, 0, 0.05) !important;
+
+}
+.MuiButtonBase-root:nth-child(4){
+  background-color: rgba(0, 0, 0, 0.03) !important;
+
+}
+.MuiButtonBase-root:nth-child(5){
+  background-color: rgba(0, 0, 0, 0.01) !important;
+
 }
 
 .cover {

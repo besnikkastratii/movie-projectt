@@ -60,7 +60,7 @@ function Home() {
       </div>
       <div className="search">
         <form onSubmit={submitHandler}>
-          <input placeholder="Kerko Ketu" value={input} onChange={inputHandler} type="text" />
+          <input className='kerko-teksti' placeholder="Kerko Ketu"  value={input} onChange={inputHandler} type="text" />
           <button> <i class="fas fa-search"></i></button>
         </form>
       </div>
