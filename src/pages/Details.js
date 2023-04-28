@@ -22,11 +22,7 @@ function Details({match}) {
         </div>
         <div className="details-container">
           <div className="flexBox">
-            <div className="cover">
-              {details &&
-                <img src={details.data.Poster==="N/A" ? noImage : details.data.Poster} alt=""/>
-              }
-            </div>
+
             <div className="info">
               <div className="back-button">
                 <Link to='/'>
@@ -62,6 +58,11 @@ function Details({match}) {
               </div>
             </div>
           </div>
+          <div className="cover">
+              {details &&
+                <img  src={details.data.Poster==="N/A" ? noImage : details.data.Poster} alt=""/>
+              }
+            </div>
           <div className="plot">
             <p>{details && details.data.Plot}</p>
           </div> 
