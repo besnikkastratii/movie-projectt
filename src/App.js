@@ -12,8 +12,6 @@ function App() {
       <Switch>
         <Route path ='/' exact component={Home}/>
         <Route path = '/details/:id' component={Details} render={(props) => <Home {...props} />} >
-
-          
         </Route>
       </Switch>
     </div>
