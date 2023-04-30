@@ -16,7 +16,7 @@ function Home() {
     try {
       const { data } = await axios.get(`https://www.omdbapi.com/?apikey=dd6c9e75&s=${search}&page=${page}`);
       setfetchedData(data.Search);
-      setTotalPages(Math.ceil(data.totalResults / 10));
+      setTotalPages(Math.ceil(data.totalResults / 12));
     } catch (error) {
       console.log(error)
     }
@@ -108,9 +108,6 @@ function Home() {
     return null;
   })}
   <Button disabled={currentPage === totalPages} onClick={nextPageHandler}>Next</Button>
-  
-  
-
 </div>
 <Button disabled={currentPage === 1} style={{ display: currentPage === 1 ? "none" : "" }}className="returnhome"onClick={() => reloadPage()}>Reload</Button>   
      <div className="footer">
@@ -118,6 +115,7 @@ function Home() {
       </div>
     </div>
   )
+
 }
 
 export default Home;

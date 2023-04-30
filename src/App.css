@@ -25,6 +25,7 @@ body {
 }
 
 .pagination{
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -58,14 +59,20 @@ button:focus {
   color: #3a3a3a;
 }
 .search form button:hover {
-  transition: 1s ease all;
+  transition: 2s ease all;
   background-color: #4ece34;
 }
 
 .returnhome{
-  float: right;
+  transform: translate(400px);
+  height: 25px;
+  
 }
-
+.returnhome:hover{
+  
+  transition: 2s ease all;
+  box-shadow: 1px 1px 23px 1px #000;
+}
 
 .search form button {
   transition: 1s ease all;
@@ -97,6 +104,16 @@ button:focus {
 
   width: 150px;
   height: 170px;
+}
+.MuiGrid-item:hover {
+  transition: 0.4s ease all;
+  margin: 10px 0px 10px 0px;
+  transform: scale(1.25);
+  
+}
+.MuiGrid-item:active{
+  transition: 0.4s ease all;
+  transform: scale(2.5);
 }
 .poster img {
   width: 100%;
@@ -165,18 +182,8 @@ button:focus {
   background-color: rgb(224, 224, 224) !important;
   box-shadow: 0 0 10px 0 rgba(87, 87, 87, 0.5)!important;
 }
-.MuiButtonBase-root:nth-child(3){
-  background-color: rgba(0, 0, 0, 0.05) !important;
 
-}
-.MuiButtonBase-root:nth-child(4){
-  background-color: rgba(0, 0, 0, 0.03) !important;
 
-}
-.MuiButtonBase-root:nth-child(5){
-  background-color: rgba(0, 0, 0, 0.01) !important;
-
-}
 
 .cover {
   margin: 0 auto;
